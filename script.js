@@ -10,14 +10,4 @@ window.addEventListener('load', function () {
     burgerNav.addEventListener('click', () => {
         navMenu.classList.toggle('displayBlock');
     })
-
-    navMenu__link.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-            link.classList.toggle('click_li');
-        })
-        link.addEventListener("mouseleave", () => {
-            link.classList.toggle('click_li');
-        })
-    })
-
 })

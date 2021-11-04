@@ -42,9 +42,7 @@ li{
 
 .nav-menu{
     display: block;
-}
-
-.nav-menu ul{
+    padding: 0;
     margin-right: 25px;
     display: flex;
     
@@ -56,6 +54,10 @@ li{
     text-decoration: none;
 }
 
+.nav-menu__link:hover{
+    color: red;
+}
+
 .nav-burger img{
     margin-right: 25px;
     width: 36px;
@@ -65,12 +67,8 @@ li{
     .nav-burger img{
         display: block;
     }
-    .nav-menu{
-        display: none;
-        position: absolute;
-        top: 16%;
-    }
     .nav-menu {
+        top: 16%;
         margin-top: 66px;
         width: 100%;
         background-color: black;
@@ -87,12 +85,7 @@ li{
     }
     li{
         margin: 16px;
-        /* background-color: yellow; */
     }
-    /* a {
-        height: 55px;
-        margin-top: 26px;
-    } */
     .nav-menu__link {
         height: 80px;
         padding-top: 40px;
@@ -101,7 +94,7 @@ li{
         flex-direction: column;
     }
 
-    .click_li{
+    .nav-menu__link:hover{
         background-color: yellow;
         color: black;
     }
